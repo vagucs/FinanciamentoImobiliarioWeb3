@@ -33,6 +33,7 @@ class DbinteracoesForm extends TPage
         $ddatahora = new TDateTime('ddatahora');
         $ctipo = new TEntry('ctipo');
         $nbloco = new TEntry('nbloco');
+        $button_ver_no_blockchain = new TButton('button_ver_no_blockchain');
         $chash = new TEntry('chash');
         $cevento = new TText('cevento');
 
@@ -41,6 +42,9 @@ class DbinteracoesForm extends TPage
         $ddatahora->setMask('dd/mm/yyyy hh:ii');
         $ddatahora->setValue('current_timestamp');
         $ddatahora->setDatabaseMask('yyyy-mm-dd hh:ii');
+        $button_ver_no_blockchain->setAction(new TAction(['DbinteracoesForm', 'VerBC'],['chash' => 'chash']), "Ver no Blockchain");
+        $button_ver_no_blockchain->addStyleClass('btn-default');
+        $button_ver_no_blockchain->setImage('fas:search #000000');
         $id->setEditable(false);
         $ctipo->setEditable(false);
         $chash->setEditable(false);
@@ -59,7 +63,7 @@ class DbinteracoesForm extends TPage
         $row1 = $this->form->addFields([new TLabel("Id:", null, '14px', null)],[$id],[],[]);
         $row2 = $this->form->addFields([new TLabel("Financiamento:", null, '14px', null)],[$dbfinanciamento_id],[new TLabel("Hora do evento:", null, '14px', null)],[$ddatahora]);
         $row3 = $this->form->addFields([new TLabel("Tipo:", null, '14px', null)],[$ctipo],[new TLabel("Bloco:", null, '14px', null)],[$nbloco]);
-        $row4 = $this->form->addFields([new TLabel("Hash:", null, '14px', null)],[$chash]);
+        $row4 = $this->form->addFields([new TLabel("Hash:", null, '14px', null)],[$button_ver_no_blockchain,$chash]);
         $row5 = $this->form->addFields([new TLabel("Log:", null, '14px', null)],[$cevento]);
 
         // create the form actions
@@ -173,6 +177,24 @@ class DbinteracoesForm extends TPage
     public static function getFormName()
     {
         return self::$formName;
+    }
+
+    public static function VerBC($param)
+    {
+
+        $window = TWindow::create('Adianti', 0.8, 0.8);
+
+        $iframe = new TElement('iframe');
+        $iframe->id = "iframe_external";
+        $iframe->src = "https://testnet.tomoscan.io/tx/" . $param['chash'];
+        $iframe->frameborder = "0";
+        $iframe->scrolling = "yes";
+        $iframe->width = "100%";
+        $iframe->height = "600px";
+
+        $window->add($iframe);
+        $window->show();
+
     }
 
 }
