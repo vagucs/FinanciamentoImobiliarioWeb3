@@ -1,0 +1,685 @@
+[
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "name",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "string"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "getApproved",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "approve",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    },
+	    {
+		"name": "ValorPago",
+		"type": "uint256"
+	    }
+	],
+	"name": "PagarDebito",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "LerComprador",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "TokenDrex",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "from",
+		"type": "address"
+	    },
+	    {
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "transferFrom",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "from",
+		"type": "address"
+	    },
+	    {
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "safeTransferFrom",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"name": "RegistroDebitos",
+	"outputs": [
+	    {
+		"name": "agente_financiador",
+		"type": "address"
+	    },
+	    {
+		"name": "agente_garantidor",
+		"type": "address"
+	    },
+	    {
+		"name": "agente_comprador",
+		"type": "address"
+	    },
+	    {
+		"name": "valorDoBem",
+		"type": "uint256"
+	    },
+	    {
+		"name": "valorDoDebitoAtual",
+		"type": "uint256"
+	    },
+	    {
+		"name": "saldoDrex",
+		"type": "uint256"
+	    },
+	    {
+		"name": "saldoDrexTokenizado",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "TokenDrexTokenizado",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "ownerOf",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "ValorTotalAbertoEmContrato",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "owner",
+		"type": "address"
+	    }
+	],
+	"name": "balanceOf",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "valorSaldoDrexTokenizado",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "LerValorTotalEmContrato",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "owner",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "valorDoBem",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "symbol",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "string"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "EnviarDrex",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"name": "approved",
+		"type": "bool"
+	    }
+	],
+	"name": "setApprovalForAll",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "valorDoDebitoAtual",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [],
+	"name": "ValorTotalDividaEmContrato",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "from",
+		"type": "address"
+	    },
+	    {
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    },
+	    {
+		"name": "_data",
+		"type": "bytes"
+	    }
+	],
+	"name": "safeTransferFrom",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "AssumirComoFinanciador",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "tokenURI",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "string"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "agente_comprador",
+		"type": "address"
+	    },
+	    {
+		"name": "agente_garantidor",
+		"type": "address"
+	    },
+	    {
+		"name": "valorDoBem",
+		"type": "uint256"
+	    }
+	],
+	"name": "CriarNFT",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    },
+	    {
+		"name": "amount",
+		"type": "uint256"
+	    }
+	],
+	"name": "EnviarDrexTokenizado",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "LerGarantidor",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "owner",
+		"type": "address"
+	    },
+	    {
+		"name": "operator",
+		"type": "address"
+	    }
+	],
+	"name": "isApprovedForAll",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "bool"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "LerFinanciador",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"constant": false,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    },
+	    {
+		"name": "ValorPago",
+		"type": "uint256"
+	    }
+	],
+	"name": "PagarDebitoFiador",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+    },
+    {
+	"constant": true,
+	"inputs": [
+	    {
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "valorSaldoDrex",
+	"outputs": [
+	    {
+		"name": "",
+		"type": "uint256"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+    },
+    {
+	"inputs": [
+	    {
+		"name": "_drexTokenAddress",
+		"type": "address"
+	    },
+	    {
+		"name": "_tokenizedDrexTokenAddress",
+		"type": "address"
+	    }
+	],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "constructor"
+    },
+    {
+	"anonymous": false,
+	"inputs": [
+	    {
+		"indexed": true,
+		"name": "from",
+		"type": "address"
+	    },
+	    {
+		"indexed": true,
+		"name": "to",
+		"type": "address"
+	    },
+	    {
+		"indexed": true,
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "Transfer",
+	"type": "event"
+    },
+    {
+	"anonymous": false,
+	"inputs": [
+	    {
+		"indexed": true,
+		"name": "owner",
+		"type": "address"
+	    },
+	    {
+		"indexed": true,
+		"name": "approved",
+		"type": "address"
+	    },
+	    {
+		"indexed": true,
+		"name": "tokenId",
+		"type": "uint256"
+	    }
+	],
+	"name": "Approval",
+	"type": "event"
+    },
+    {
+	"anonymous": false,
+	"inputs": [
+	    {
+		"indexed": true,
+		"name": "owner",
+		"type": "address"
+	    },
+	    {
+		"indexed": true,
+		"name": "operator",
+		"type": "address"
+	    },
+	    {
+		"indexed": false,
+		"name": "approved",
+		"type": "bool"
+	    }
+	],
+	"name": "ApprovalForAll",
+	"type": "event"
+    }
+]
