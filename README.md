@@ -10,7 +10,7 @@ Contratos simulados na rede Tomo/Vict.
 
 Contrato drex: 0xd47f2abf5f2bf03b8602686f9497a004c173ce6a
 
-Contra Drex/Tokenizado: 0xe72ba3942d05cd5936a06a783f8a389175ad6bf0
+Contrato Drex/Tokenizado: 0xe72ba3942d05cd5936a06a783f8a389175ad6bf0
 
 Contrato NFT/Imoveis: 0x57a7ea82ebd5e50259cd3088cf0e6b52d4a2fcba
 
